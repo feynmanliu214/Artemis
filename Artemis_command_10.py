@@ -77,8 +77,8 @@ def run_simulation(m_planet, sigma_value, time_length, k, exponent, num_planets)
     data = {'exponent': [exponent], 'k': [k], 't_max': [time_length]}
 
     for i in range(num_planets):
-        data[f'planet_{i+1}'] = [planets_initial[i]]
-        data[f'planet_{i+1}_new'] = [planets_final[i]]
+        data[f"planet_{i+1}"] = [planets_initial[i]]
+        data[f"planet_{i+1}_new"] = [planets_final[i]]
 
     data.update({
         'Encounter_time': [time_result],
